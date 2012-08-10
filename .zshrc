@@ -7,9 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dogenpunk"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -37,9 +34,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 function precmd () {
   z --add "$(pwd -P)"
 }
-# My Aliases
-eval "$(hub alias -s)"
-alias gdb='/usr/local/bin/gdb'
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 
@@ -58,3 +52,10 @@ autoload bashcompinit
 bashcompinit
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
+# aliases
+alias zshconfig="subl ~/.zshrc"
+alias ohmyzsh="subl ~/.oh-my-zsh"
+eval "$(hub alias -s)"
+alias gdb='/usr/local/bin/gdb'
+alias cr python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m
+alias ls='ls -la'
