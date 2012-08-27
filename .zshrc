@@ -40,14 +40,14 @@ export PIP_RESPECT_VIRTUALENV=true
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx sublime python pip tmux mercurial virtualenvwrapper)
+plugins=(git osx sublime python pip iterm tmux mercurial virtualenvwrapper)
 
 export EDITOR=vim
 set AUTO_CD
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/nvm/nvm.sh
-source $HOME/xgen.sh
+source $HOME/dev/dotfiles/xgen.sh
 autoload bashcompinit
 bashcompinit
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
