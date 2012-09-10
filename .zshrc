@@ -46,7 +46,6 @@ export EDITOR=vim
 set AUTO_CD
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/nvm/nvm.sh
 source $HOME/dev/dotfiles/xgen.sh
 autoload bashcompinit
 bashcompinit

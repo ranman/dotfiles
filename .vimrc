@@ -1,8 +1,9 @@
 set nocompatible
 call pathogen#infect()
 
-syntax enable
+syntax on
 set encoding=utf-8
+set laststatus=2
 set showcmd
 filetype plugin indent on
 
@@ -31,3 +32,5 @@ set noswapfile
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
+let g:Powerline_cache_enabled = 0
+let g:Powerline_symbols = 'fancy'
