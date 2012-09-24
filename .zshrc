@@ -57,4 +57,4 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 eval "$(hub alias -s)"
 alias gdb='/usr/local/bin/gdb'
 alias cr python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m
-alias ls='ls -la'
+alias ls='ls -la -G'
