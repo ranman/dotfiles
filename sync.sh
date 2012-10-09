@@ -3,4 +3,4 @@ for f in .*
 do
     [ -f "$f" ] && ln -fs $PWD/$f $HOME/$f
 done
-ln -fs $HOME/.ssh/config .ssh/config
+ln -fs $PWD/.ssh/config $HOME/.ssh/config
