@@ -40,7 +40,7 @@ function precmd () {
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx sublime python pip iterm tmux mercurial virtualenvwrapper history-substring-search)
+plugins=(git osx sublime python pip iterm tmux virtualenvwrapper history-substring-search syntax-highlighting)
 
 export EDITOR=vim
 set AUTO_CD
@@ -57,7 +57,7 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 eval "$(hub alias -s)"
 alias gdb='/usr/local/bin/gdb'
 alias ls='ls -la -G'
-alias cr python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m
+alias cr="python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m"
 
 # pip virtualenv support
 export PIP_VIRTUALENV=$WORKON_HOME
@@ -66,3 +66,4 @@ export PIP_RESPECT_VIRTUALENV=true
 if [[ -f "$HOME/.amazon_keys" ]]; then
     source "$HOME/.amazon_keys";
 fi
+
