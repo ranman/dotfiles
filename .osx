@@ -383,6 +383,9 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
+# Change default screenshot location to dropbox
+defaults write com.apple.screencapture location ~/Dropbox/screenshots
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
