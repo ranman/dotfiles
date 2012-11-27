@@ -54,8 +54,18 @@ bind g:cmd            grid padding:5 0:6,4 1:8,6
 #bind l:cmd              layout testLayout
 
 # Resize Bindings
+
+# half screen
 bind right:cmd;alt;ctrl ${righthalf}
 bind left:cmd;alt;ctrl  ${lefthalf}
 bind up:cmd;alt;ctrl    ${tophalf}
 bind down:cmd;alt;ctrl  ${bottomhalf}
 
+# quarter screen
+bind right:ctrl;alt     ${bottomright}
+bind left:ctrl;alt      ${topleft}
+bind up:ctrl;alt        ${topright}
+bind down:ctrl;alt      ${bottomleft}
+
+# Full screen
+bind m:cmd;alt;ctrl     ${full}
