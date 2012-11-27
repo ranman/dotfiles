@@ -8,3 +8,5 @@
 	template = /Users/ranman/.gitmessage.txt
 [color]
 	ui = true
+[push]
+	default = simple
