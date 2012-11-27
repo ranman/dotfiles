@@ -48,10 +48,10 @@ default 2monitors resolutions:${mon-laptop};${mon-thunderbolt}
 default 1monitor  resolutions:${mon-laptop};
 
 # Key Bindings
-bind e:cmd              hint ASDFGHJKLQWERTYUIOPCVBN
-bind g:cmd              grid padding:5 0:6,2 1:8,3
-bind b:cmd;alt          focus 'Google Chrome'
-bind l:cmd              layout testLayout
+bind e:cmd            hint ASDFGHJKLQWERTYUIOPCVBN
+bind g:cmd            grid padding:5 0:6,4 1:8,6
+#bind b:cmd;alt        focus 'Google Chrome'
+#bind l:cmd              layout testLayout
 
 # Resize Bindings
 bind right:cmd;alt;ctrl ${righthalf}
