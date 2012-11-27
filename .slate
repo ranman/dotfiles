@@ -13,7 +13,7 @@ alias mon-laptop        0
 alias mon-thunderbolt   1
 
 # Misc Aliases
-alias ediotr 'Sublime Text 2'
+alias editor 'Sublime Text 2'
 alias browser 'Google Chrome'
 
 # Abstract positions
