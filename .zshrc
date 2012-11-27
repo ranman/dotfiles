@@ -5,8 +5,6 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="random"
-#ZSH_THEME="muse"
 ZSH_THEME="humza"
 
 
@@ -26,16 +24,12 @@ ZSH_THEME="humza"
 COMPLETION_WAITING_DOTS="true"
 
 # Customize to your needs...
-export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/dev/go/bin
+export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-. `brew --prefix`/etc/profile.d/z.sh
-function precmd () {
-  z --add "$(pwd -P)"
-}
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -47,10 +41,8 @@ set AUTO_CD
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/dev/dotfiles/xgen.sh
-autoload bashcompinit
-bashcompinit
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
-
+# autocomplete
+fpath=(/usr/local/share/zsh/site-functions $fpath)
 # aliases
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"

@@ -1,7 +1,7 @@
 set nocompatible
 call pathogen#infect()
 
-syntax on
+syntax enable
 set encoding=utf-8
 set laststatus=2
 set showcmd
@@ -15,12 +15,8 @@ set autoindent
 set copyindent
 set smarttab
 set backspace=indent,eol,start " allow backspace over everything in insert mode
-set hlsearch incsearch smartcase " highlight matches and search as you type 
+set hlsearch incsearch smartcase " highlight matches and search as you type
 set showmatch
-
-set background=dark
-colorscheme solarized
-let g:solarized_termtrans = 1
 
 set history=1000
 set undolevels=1000
@@ -32,5 +28,7 @@ set noswapfile
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
-let g:Powerline_cache_enabled = 0
-let g:Powerline_symbols = 'fancy'
+if has('autocmd')
+    autocmd filetype python set expandtab
+    autocmd filetype html,xml set listchars-=tab:>.
+endif
