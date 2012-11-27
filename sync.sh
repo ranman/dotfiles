@@ -3,4 +3,5 @@ for f in .*
 do
     [ -f "$f" ] && ln -fs $PWD/$f $HOME/$f
 done
-ln -fs $PWD/.ssh/config $HOME/.ssh/config
+ln -sf $PWD/.ssh/config $HOME/.ssh/config
+ln -sf $PWD/post-cmmit /usr/local.share/git-core/templates/hooks/post-commit
