@@ -54,3 +54,15 @@ bind right:cmd;alt;ctrl;shift throw next
 
 # previous screen
 bind left:cmd;alt;ctrl;shift throw previous
+
+# change windowPos
+bind right:cmd;alt;shift nudge +10% +0
+bind left:cmd;alt;shift  nudge -10% +0
+bind up:cmd;alt;shift    nudge +0 -10%
+bind down:cmd;alt;shift  nudge +0 +10%
+
+# change windowSize
+bind right:cmd;ctrl;shift resize +10% +0
+bind left:cmd;ctrl;shift  resize -10% +0
+bind up:cmd;ctrl;shift    resize +0 -10%
+bind down:cmd;ctrl;shift  resize +0 +10%
