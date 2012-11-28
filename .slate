@@ -5,7 +5,6 @@ config windowHintsSpread true
 config windowHintsFontSize 100
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
-config secondsBetweenRepeat 0.1
 config focusCheckWidthMax 3000
 
 # General aliases
