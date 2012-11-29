@@ -3,7 +3,7 @@
 	email = randallhunt@gmail.com
 [core]
 	editor = vim
-	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+	whitespace = trailing-space,space-before-tab
 [commit]
 	template = /Users/ranman/.gitmessage.txt
 [color]
