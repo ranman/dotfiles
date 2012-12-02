@@ -37,6 +37,11 @@ alias gdb='/usr/local/bin/gdb'
 alias ls='ls -la -G'
 alias cr="python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m"
 
+# Vim style command editing
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # pip virtualenv support
 export PIP_VIRTUALENV=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
