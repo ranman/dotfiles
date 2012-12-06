@@ -46,4 +46,4 @@ export PIP_RESPECT_VIRTUALENV=true
 if [[ -f "$HOME/.amazon_keys" ]]; then
     source "$HOME/.amazon_keys";
 fi
-
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
