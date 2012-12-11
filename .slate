@@ -3,6 +3,8 @@ config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
 config windowHintsFontSize 100
+config windowHintsDuration 2
+config windowHintsFontColor 0;0;0;1.0
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
 config focusCheckWidthMax 3000
