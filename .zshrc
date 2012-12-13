@@ -11,7 +11,7 @@ ZSH_THEME="humza"
 COMPLETION_WAITING_DOTS="true"
 
 # Customize to your needs...
-export PATH=/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin:$PATH
+export PATH=/opt/X11/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:$PATH
 
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
