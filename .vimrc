@@ -9,7 +9,7 @@ filetype plugin indent on
 
 set hidden " allow hidden buffers
 set nowrap " don't wrap lines
-set tabstop=4 shiftwidth=4 expandtab " indentation is always 4 spaces
+set tabstop=4 shiftwidth=4 " indentation is always 4 spaces
 set shiftround
 set autoindent
 set copyindent
