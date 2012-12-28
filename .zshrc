@@ -12,7 +12,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Customize to your needs...
 export PATH=/opt/X11/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:$PATH
-
+export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-pckages:$PYTHONPATH
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
