@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="humza"
+ZSH_THEME="powerline"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
@@ -23,7 +23,6 @@ export EDITOR=vim
 set AUTO_CD
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/dev/dotfiles/xgen.sh
 # autocomplete
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 # aliases
@@ -47,3 +46,6 @@ if [[ -f "$HOME/.amazon_keys" ]]; then
     source "$HOME/.amazon_keys";
 fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+POWERLINE_NO_BLANK_LINE="true"
+POWERLINE_DETECT_SSH="true"

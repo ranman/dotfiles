@@ -1,12 +1,11 @@
-set nocompatible
 call pathogen#infect()
+set nocompatible
 
 syntax enable
 set encoding=utf-8
-set laststatus=2
-set showcmd
 filetype plugin indent on
 
+set laststatus=2
 set hidden " allow hidden buffers
 set nowrap " don't wrap lines
 set tabstop=4 shiftwidth=4 " indentation is always 4 spaces
@@ -27,6 +26,8 @@ set noswapfile
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set encoding=utf-8
+set fillchars +=stl:\ ,stlnc:\
 
 if has('autocmd')
     autocmd filetype python set expandtab
