@@ -36,7 +36,7 @@ alias cr="python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.c
 # Vim style command editing
 autoload edit-command-line
 zle -N edit-command-line
-bindkey '^Xe' edit-command-line
+bindkey '^x^e' edit-command-line
 
 # pip virtualenv support
 export PIP_VIRTUALENV=$WORKON_HOME
@@ -47,5 +47,6 @@ if [[ -f "$HOME/.amazon_keys" ]]; then
 fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+alias knife='nocorrect knife'
 POWERLINE_NO_BLANK_LINE="true"
 POWERLINE_DETECT_SSH="true"
