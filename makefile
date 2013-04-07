@@ -1,4 +1,4 @@
-all: git tmux vim zsh
+all: clean git tmux vim zsh
 clean: git_clean tmux_clean vim_clean zsh_clean
 
 PWD = $(shell pwd)
@@ -26,7 +26,7 @@ tmux.conf:
 		ln -s $(TMUX)/tmux.conf ~/.tmux.conf
 
 tmux_clean:
-		mv ~/.tmux.conf ~/.tmux.conf.old
+		mv ~/.tmux.conf.clean ~/.tmux.conf
 
 # VIM
 
