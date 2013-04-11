@@ -1,17 +1,15 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 set nocompatible
 
 syntax enable
 set encoding=utf-8
-filetype plugin indent on
 
 set laststatus=2
 set hidden " allow hidden buffers
 set nowrap " don't wrap lines
 set tabstop=4 shiftwidth=4 " indentation is always 4 spaces
 set shiftround
-set autoindent
-set copyindent
 set smarttab
 set backspace=indent,eol,start " allow backspace over everything in insert mode
 set hlsearch incsearch smartcase " highlight matches and search as you type

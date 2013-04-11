@@ -4,8 +4,6 @@
 [core]
 	editor = vim
 	whitespace = trailing-space,space-before-tab
-[commit]
-	template = /Users/ranman/.gitmessage.txt
 [color]
 	ui = true
 [push]
