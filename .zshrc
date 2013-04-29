@@ -50,3 +50,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 alias knife='nocorrect knife'
 POWERLINE_NO_BLANK_LINE="true"
 POWERLINE_DETECT_SSH="true"
+set show-all-if-ambiguous on
+set completion-ignore-case on

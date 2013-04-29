@@ -16,4 +16,4 @@
 	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 [diff]
-	algorithm = patience
+	algorithm = minimal
