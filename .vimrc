@@ -1,5 +1,5 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+execute pathogen#infect()
 set nocompatible
 
 syntax enable
