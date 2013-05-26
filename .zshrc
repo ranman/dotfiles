@@ -52,3 +52,4 @@ POWERLINE_NO_BLANK_LINE="true"
 POWERLINE_DETECT_SSH="true"
 set show-all-if-ambiguous on
 set completion-ignore-case on
+fortune | cowsay
