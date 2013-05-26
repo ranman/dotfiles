@@ -15,5 +15,6 @@
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+	st = status --short
 [diff]
 	algorithm = minimal
