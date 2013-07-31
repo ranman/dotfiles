@@ -3,18 +3,33 @@
 	email = randallhunt@gmail.com
 [core]
 	editor = vim
-	whitespace = trailing-space,space-before-tab
+	whitespace = fix,trailing-space,space-before-tab,tab-in-indent
+	excludesfile = /Users/ranman/.gitignore
+[github]
+	user = ranman
+[hub]
+	http-clone = false
+	protocol = https
+[rerere]
+	enabled = 1
 [color]
 	ui = true
+	interactive = true
 [push]
-	default = simple
+	default = tracking
+[branch]
+	autosetuprebase = always
 [alias]
 	co = checkout
+	pull = pull --ff-only
 	assume = update-index --assume-unchanged
 	unassume = update-index --no-assume-unchanged
 	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
 	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
 	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 	st = status --short
-[diff]
-	algorithm = minimal
+	conflicts = !git ls-files -u | cut -f 2 | sort -u
+[help]
+	autocorrect = 1
+[init]
+	templatedir = ~/.git_template

@@ -1,0 +1,58 @@
+# DNS Records
+function dighost() {
+  host $(dig $1 | grep ANSWER -C 1 | tail -n 1 | awk '{ print $5 }')
+}
+
+# Create a new directory and enter it
+function cdmkdir() {
+  mkdir -p "$@" && cd "$@"
+}
+
+# Create a data URL from a file
+function dataurl() {
+  local mimeType=$(file -b --mime-type "$1")
+  if [[ $mimeType == text/* ]]; then
+    mimeType="${mimeType};charset=utf-8"
+  fi
+  echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')"
+}
+
+# Git
+# exports a git repo to a new project folder
+git-export() {
+  if [ $# -lt 2 ]
+  then
+    echo "Error! Repo and project name required."
+  else
+    git clone --quiet --depth=1 $1 $2
+    rm -rf $2/.git*
+  fi
+}
+
+function pr() {
+  if [ $# -lt 1 ]
+  then
+    echo "Error! Missing Pull Request ID #."
+  else
+    git fetch origin refs/pull/$1/head:pull-request-$1;
+    git checkout pull-request-$1;
+  fi
+}
+
+# 10gen Stuff
+
+function jira() {
+  if [ -n $1 ]
+  then
+    ticket=`echo "$1" | tr '[:lower:]' '[:upper:]'`
+    open https://jira.mongodb.org/browse/`echo $ticket`
+  fi
+}
+
+function jiras() {
+  if [ -n $1 ]
+  then
+    term=`echo "$1" | tr '[:upper:]' '[:lower:]'`
+    open "https://jira.mongodb.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=summary+~+$term+OR+description+~+$term+OR+comment+~+$term"
+  fi
+}

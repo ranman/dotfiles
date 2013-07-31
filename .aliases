@@ -1,0 +1,7 @@
+alias stfu="osascript -e 'set volume output muted true'"
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+eval "$(hub alias -s)" # github hub gem
+alias ls='ls -la -G'
+alias cr="python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m"
+alias knife='nocorrect knife'

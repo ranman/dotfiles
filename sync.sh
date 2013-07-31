@@ -1,7 +1,4 @@
 #!/usr/bin/env zsh
-for f in .*
-do
-    [ -f "$f" ] && ln -fs $PWD/$f $HOME/$f
+for f in .{zshrc,aliases,exports,functions,emacs,slate,gitconfig,tmux.conf,gitignore,rvmrc}; do
+    [ -e "$f" ] && ln -fs $PWD/$f $HOME/$f
 done
-ln -sf $PWD/.ssh/config $HOME/.ssh/config
-ln -sf $PWD/post-cmmit /usr/local.share/git-core/templates/hooks/post-commit
