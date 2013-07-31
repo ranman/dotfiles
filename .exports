@@ -2,10 +2,6 @@
 export LC_ALL="en_US.UTF-8"
 export EDITOR=vim
 set AUTO_CD
-# autocomplete
-fpath=(/usr/local/share/zsh/site-functions $fpath)
-set show-all-if-ambiguous on
-set completion-ignore-case on
 
 # Go Lang
 export GO_VERSION="1.1"
