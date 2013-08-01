@@ -13,14 +13,12 @@ set completion-ignore-case on
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ranman"
 plugins=(git osx sublime python iterm history-substring-search syntax-highlighting virtualenvwrapper)
-
 source $ZSH/oh-my-zsh.sh
 
 for file in ~/.{exports,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
-
 
 # amazon API keys
 if [[ -f "$HOME/.amazon_keys" ]]; then
