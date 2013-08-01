@@ -1,5 +1,14 @@
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/texbin:$PATH
 
+# autocomplete
+fpath=(/usr/local/share/zsh/site-functions $fpath)
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle :compinstall filename '/Users/ranman/.zshrc'
+autoload -Uz compinit
+compinit
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ranman"
@@ -12,10 +21,6 @@ for file in ~/.{exports,aliases,functions}; do
 done
 unset file
 
-# autocomplete
-fpath=(/usr/local/share/zsh/site-functions $fpath)
-set show-all-if-ambiguous on
-set completion-ignore-case on
 
 # amazon API keys
 if [[ -f "$HOME/.amazon_keys" ]]; then
