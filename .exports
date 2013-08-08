@@ -4,8 +4,9 @@ export EDITOR=vim
 set AUTO_CD
 
 # Go Lang
-export GO_VERSION="1.1"
+export GO_VERSION="1.1.1"
 export GOROOT=$(brew --prefix)/Cellar/go/$GO_VERSION
+export GOPATH=~/gopath
 
 # Python
-export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-pckages:$PYTHONPATH
+export VIRTUAL_ENV_DISABLE_PROMPT=1
