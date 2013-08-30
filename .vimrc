@@ -29,6 +29,23 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set encoding=utf-8
 set fillchars +=stl:\ ,stlnc:\
 
+let mapleader = ','
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <leader>l :Align
+nmap <leader>a :Ack
+nmap <leader>b :CommandTBuffer<CR>
+nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>t :CommandT<CR>
+nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
+nmap <leader><space> :call whitespace#strip_trailing()<CR>
+map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+let g:ackprg = 'ag --nogroup --column'
+
 if has('autocmd')
     autocmd filetype python set expandtab
     autocmd filetype html,xml set listchars-=tab:>.
