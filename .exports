@@ -4,9 +4,13 @@ export EDITOR=vim
 set AUTO_CD
 
 # Go Lang
-export GO_VERSION="1.1.1"
+export GO_VERSION="1.1.2"
 export GOROOT=$(brew --prefix)/Cellar/go/$GO_VERSION
 export GOPATH=~/gopath
 
 # Python
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Ruby
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
