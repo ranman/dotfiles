@@ -30,8 +30,7 @@ alias bottomRightQuarter ${sox}+${ssx}/2;${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
 
 # Key Bindings
 bind e:cmd            hint ASDFGHJKLQWERTYUIOPCVBN
-bind g:cmd            grid padding:5 0:8,8 1:8,8
-bind tab:cmd          switch
+bind g:cmd;shift            grid padding:5 0:8,8 1:8,8
 
 # Resize Bindings
 
