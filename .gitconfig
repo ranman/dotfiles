@@ -36,3 +36,7 @@
 	templatedir = ~/.git_template
 [pager]
 	stash = cat
+[diff]
+	algorithm = patience
+[credential]
+	helper = osxkeychain
