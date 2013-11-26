@@ -1,5 +1,6 @@
 alias stfu="osascript -e 'set volume output muted true'"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 alias l='ls -lah -G'
 alias cr="python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.com \-m"
