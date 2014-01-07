@@ -18,10 +18,10 @@ alias ssy screenSizeY
 # Position aliases
 alias centered ${sox}+${ssx}/8;${soy}+${ssy}/8 ${ssx}/8*6;${ssy}/8*6
 alias fullscreen ${sox};${soy} ${ssx};${ssy}
-alias leftHalf ${sox};${soy} ${ssx}/2;${ssy}
+alias leftHalf ${sox};${soy} ${ssx}/1.85;${ssy}
 alias bottomHalf ${sox};${soy}+${ssy}/2 ${ssx};${ssy}/2
 alias topHalf ${sox};${soy} ${ssx};${ssy}/2
-alias rightHalf ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}
+alias rightHalf ${sox}+${ssx}/1.85;${soy} ${ssx}/1.85;${ssy}
 alias topLeftQuarter ${sox};${soy} ${ssx}/2;${ssy}/2
 alias topRightQuarter ${sox}+${ssx}/2;${soy} ${ssx}/2;${ssy}/2
 alias bottomLeftQuarter ${sox};${soy}+${ssy}/2 ${ssx}/2;${ssy}/2
