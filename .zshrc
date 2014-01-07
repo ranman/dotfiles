@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/texbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:/usr/texbin:$PATH
 
 # autocomplete
 fpath=(/usr/local/share/zsh/site-functions $fpath)
