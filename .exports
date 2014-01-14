@@ -14,3 +14,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # Ruby
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Java
+export JAVA_OPTS="-server -Xms3072m -Xmx3072M -XX:MaxPermSize=1024M -XX:NewSize=1024m -XX:CodeCacheMinimumFreeSpace=2M -XX:ReservedCodeCacheSize:64M -Dsun.lang.ClassLoader.allowArraySyntax=true"
+export MAVEN_OPTS="-Xmx3072M -XX:MaxPermSize=1024M"
