@@ -1,42 +1,43 @@
 [user]
-	name = J. Randall Hunt
-	email = randallhunt@gmail.com
+    name = J. Randall Hunt
+    email = randallhunt@gmail.com
 [core]
-	editor = vim
-	whitespace = fix,trailing-space,space-before-tab,tab-in-indent
-	excludesfile = /Users/ranman/.gitignore
-	pager = less -F -X
+    editor = vim
+    whitespace = fix,trailing-space,space-before-tab,tab-in-indent
+    excludesfile = /Users/ranman/.gitignore
+    pager = less -F -X
 [github]
-	user = ranman
+    user = ranman
 [hub]
-	http-clone = false
-	protocol = https
+    http-clone = false
+    protocol = https
 [rerere]
-	enabled = 1
+    enabled = 1
 [color]
-	ui = true
-	interactive = true
+    ui = true
+    interactive = true
 [push]
-	default = tracking
+    default = tracking
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [alias]
-	co = checkout
-	pull = pull --ff-only
-	assume = update-index --assume-unchanged
-	unassume = update-index --no-assume-unchanged
-	assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-	ours = "!f() { git checkout --ours $@ && git add $@; }; f"
-	theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
-	st = status --short
-	conflicts = !git ls-files -u | cut -f 2 | sort -u
+    co = checkout
+    pull = pull --ff-only
+    assume = update-index --assume-unchanged
+    unassume = update-index --no-assume-unchanged
+    assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+    ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+    theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+    st = status -sb
+    conflicts = !git ls-files -u | cut -f 2 | sort -u
+    karma = shortlog -sn
 [help]
-	autocorrect = 1
+    autocorrect = 1
 [init]
-	templatedir = ~/.git_template
+    templatedir = ~/.git_template
 [pager]
-	stash = cat
+    stash = cat
 [diff]
-	algorithm = patience
+    algorithm = patience
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
