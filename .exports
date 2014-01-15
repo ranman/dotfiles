@@ -5,7 +5,6 @@ set AUTO_CD
 
 # Go Lang
 export GO_VERSION="1.2"
-export GOROOT=$(brew --prefix)/Cellar/go/$GO_VERSION
 export GOPATH=~/gopath
 
 # Python
