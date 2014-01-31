@@ -8,6 +8,8 @@ autoload -Uz compinit
 compinit
 set show-all-if-ambiguous on
 set completion-ignore-case on
+setopt EXTENDED_GLOB
+setopt BRACE_CCL
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

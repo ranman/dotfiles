@@ -7,4 +7,5 @@ alias cr="python \~/dev/10gen/scratch/tools/upload.py \-y \-s codereview.10gen.c
 alias knife='nocorrect knife'
 alias pyclean='find . -type f -name "*.pyc" -ls -delete'
 alias tar='tar --use-compress-program=pigz'
+alias git='noglob git'
 eval "$(hub alias -s)"

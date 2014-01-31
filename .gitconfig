@@ -29,7 +29,7 @@
     ours = "!f() { git checkout --ours $@ && git add $@; }; f"
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
     st = status -sb
-    conflicts = !git ls-files -u | cut -f 2 | sort -u
+    conflicts = git diff --diff-filter=U
     karma = shortlog -sn
 [help]
     autocorrect = 1
