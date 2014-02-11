@@ -6,6 +6,7 @@ set AUTO_CD
 # Go Lang
 export GO_VERSION="1.2"
 export GOPATH=~/gopath
+export GOBIN=~/gopath/bin
 
 # Python
 export VIRTUAL_ENV_DISABLE_PROMPT=1
