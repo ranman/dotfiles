@@ -1,7 +1,7 @@
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:/usr/texbin:/usr/local/Cellar/go/1.2/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:/usr/texbin:~/.cabal/bin:$PATH
 
 # autocomplete
-fpath=(/usr/local/share/zsh/site-functions $fpath)
+fpath=($HOME/.zsh-completetions /usr/local/share/zsh/site-functions $fpath)
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle :compinstall filename '/Users/ranman/.zshrc'
 autoload -Uz compinit
