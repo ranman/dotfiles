@@ -56,3 +56,7 @@ function jiras() {
     open "https://jira.mongodb.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=summary+~+$term+OR+description+~+$term+OR+comment+~+$term"
   fi
 }
+
+function bgimage() {
+  osascript -e "tell application \"iTerm\" to set background image path of current session of current terminal to \"$1\""
+}

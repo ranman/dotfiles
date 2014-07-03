@@ -13,6 +13,7 @@ set nowrap " don't wrap lines
 set tabstop=4 shiftwidth=4 " indentation is always 4 spaces
 set shiftround
 set smarttab
+set expandtab
 set backspace=indent,eol,start " allow backspace over everything in insert mode
 set hlsearch incsearch smartcase " highlight matches and search as you type
 set showmatch

@@ -3,3 +3,4 @@
 .floo
 .flooignore
 *.iml
+*node_modules/

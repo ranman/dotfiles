@@ -8,13 +8,11 @@ autoload -Uz compinit
 compinit
 set show-all-if-ambiguous on
 set completion-ignore-case on
-setopt EXTENDED_GLOB
-setopt BRACE_CCL
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ranman"
-plugins=(git osx sublime python iterm history-substring-search syntax-highlighting virtualenvwrapper)
+plugins=(git brew osx sublime python iterm history-substring-search syntax-highlighting aws cabal docker fabric mvn virtualenvwrapper)
 source $ZSH/oh-my-zsh.sh
 
 for file in ~/.{exports,aliases,functions}; do
@@ -26,15 +24,5 @@ unset file
 if [[ -f "$HOME/.amazon_keys" ]]; then
     source "$HOME/.amazon_keys";
 fi
-
-bindkey -v
-bindkey '^P' up-history
-bindkey '^N' down-history
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
-bindkey '^r' history-incremental-search-backward
-export KEYTIMEOUT=1
-
 
 fortune | cowsay

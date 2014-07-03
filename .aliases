@@ -9,4 +9,5 @@ alias pyclean='find . -type f -name "*.pyc" -ls -delete'
 alias tar='tar --use-compress-program=pigz'
 alias git='noglob git'
 alias rm='trash'
+alias gp='| grep -i'
 eval "$(hub alias -s)"
