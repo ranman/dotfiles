@@ -12,7 +12,7 @@ set completion-ignore-case on
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="ranman"
-plugins=(git brew osx sublime python iterm history-substring-search syntax-highlighting aws cabal docker fabric mvn virtualenvwrapper)
+plugins=(git brew osx sublime python iterm history-substring-search syntax-highlighting cabal docker fabric mvn virtualenvwrapper)
 source $ZSH/oh-my-zsh.sh
 
 for file in ~/.{exports,aliases,functions}; do
