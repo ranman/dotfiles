@@ -6,6 +6,5 @@ alias l='ls -lah -G'
 alias knife='nocorrect knife'
 alias pyclean='find . -type f -name "*.pyc" -ls -delete'
 alias tarfast='tar --use-compress-program=pigz'
-alias rm='trash'
 alias gp='| grep -i'
 eval "$(hub alias -s)"
