@@ -1,5 +1,5 @@
 [user]
-    name = J. Randall Hunt
+    name = 🖖 Randall Hunt🖖
     email = randallhunt@gmail.com
 [core]
     editor = vim
@@ -10,14 +10,13 @@
     user = ranman
 [hub]
     http-clone = false
-    protocol = https
 [rerere]
     enabled = 1
 [color]
     ui = true
     interactive = true
 [push]
-    default = tracking
+    default = current
 [branch]
     autosetuprebase = always
 [alias]
@@ -33,11 +32,11 @@
     karma = shortlog -sn
 [help]
     autocorrect = 1
-[init]
-    templatedir = ~/.git_template
 [pager]
     stash = cat
 [diff]
     algorithm = patience
 [credential]
     helper = osxkeychain
+[init]
+    defaultBranch = main

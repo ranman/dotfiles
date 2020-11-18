@@ -2,9 +2,13 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
-alias l='ls -lah -G'
 alias knife='nocorrect knife'
 alias pyclean='find . -type f -name "*.pyc" -ls -delete'
 alias tarfast='tar --use-compress-program=pigz'
 alias gp='| grep -i'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 eval "$(hub alias -s)"
