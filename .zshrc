@@ -50,3 +50,5 @@ precmd() {
     email="ranman@fb.com"
     [[ $PWD =~ .*/dev/fb.*$ ]] && { export GIT_COMMITTER_EMAIL=$email && export GIT_AUTHOR_EMAIL=$email; } || { unset GIT_COMMITTER_EMAIL && unset GIT_AUTHOR_EMAIL; }
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
