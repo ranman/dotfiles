@@ -4,18 +4,16 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
+export PATH="/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/bin:$PATH"
+fpath+=~/.zfuunc
 autoload -Uz compinit && compinit
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/bin:$PATH"
 export HISTSIZE=1000000
 
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
-plugins=(osx)
+plugins=(macos)
 source $ZSH/oh-my-zsh.sh
 
 for file in ~/.{exports,aliases,functions}; do
@@ -33,13 +31,18 @@ if command -v rbenv 1>/dev/null 2>&1; then
 fi
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 precmd() {
-    email="ranman@fb.com"
-    [[ $PWD =~ .*/dev/fb.*$ ]] && { export GIT_COMMITTER_EMAIL=$email && export GIT_AUTHOR_EMAIL=$email; } || { unset GIT_COMMITTER_EMAIL && unset GIT_AUTHOR_EMAIL; }
+    if [[ $PWD =~ .*/dev/caylent.*$ && -d .git ]]; then
+      git config --local user.name "Randall Hunt (Caylent)"
+      export GIT_COMMITTER_EMAIL="randall@caylent.com"
+      export GIT_AUTHOR_EMAIL="randall@caylent.com"
+    else
+      unset GIT_COMMITTER_EMAIL
+      unset GIT_AUTHOR_EMAIL
+    fi
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -50,3 +53,12 @@ eval "$(jump shell)"
 function toggle-right-prompt() { p10k display '*/right'=hide,show; }
 zle -N toggle-right-prompt
 bindkey '^P' toggle-right-prompt
+
+# Created by `pipx` on 2021-06-07 20:11:31
+export PATH="$PATH:/Users/ranman/.local/bin"
+export PIPENV_VENV_IN_PROJECT=1
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+eval "$(pyenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"

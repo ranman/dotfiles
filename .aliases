@@ -11,4 +11,4 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
-eval "$(hub alias -s)"
+alias awsume=". awsume"

@@ -1,11 +1,11 @@
 [user]
-    name = 🖖 Randall Hunt🖖
+    name = 🖖 Randall Hunt 🖖
     email = randallhunt@gmail.com
 [core]
     editor = vim
     whitespace = fix,trailing-space,space-before-tab,tab-in-indent
     excludesfile = /Users/ranman/.gitignore
-    pager = less -F -X
+    pager = git-split-diffs --color | less -RFX
 [github]
     user = ranman
 [hub]
@@ -32,8 +32,6 @@
     karma = shortlog -sn
 [help]
     autocorrect = 1
-[pager]
-    stash = cat
 [diff]
     algorithm = patience
 [credential]

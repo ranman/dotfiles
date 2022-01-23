@@ -1,0 +1,4 @@
+# General
+export LC_ALL="en_US.UTF-8"
+export EDITOR=vim
+set AUTO_CD
